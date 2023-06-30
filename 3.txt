@@ -1,1 +1,6 @@
-asdas
+测试新环境
+pkg-config --modversion eigen3
+
+ssh-keygen -t rsa -C "邮箱"
+
+ssh -T git@github.com
