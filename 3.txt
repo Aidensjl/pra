@@ -4,3 +4,16 @@ pkg-config --modversion eigen3
 ssh-keygen -t rsa -C "邮箱"
 
 ssh -T git@github.com
+
+大文件操作
+第一次
+git lfs install
+git lfs track a.zip(要上传的文件)
+git add .gitattributes
+git commit -m ‘文件说明’
+git push
+
+第二次
+git add a.zip(要上传的文件)
+git commit -m ‘文件说明’
+git push
