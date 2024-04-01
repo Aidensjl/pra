@@ -17,3 +17,43 @@ git push
 git add a.zip(要上传的文件)
 git commit -m ‘文件说明’
 git push
+
+
+方法二https://blog.csdn.net/AiXueK/article/details/124998109
+git lfs install
+git lfs track "xx/xx/xx.npz"
+git add .gitattributes
+git commit -m "add filxxx"
+git push origin master
+
+
+
+如果你刚刚初始化了一个新的仓库，并且还没有在任何分支上进行提交，那么在查看远程仓库的提交信息之前，你需要完成以下步骤：
+
+添加远程仓库： 首先，你需要将远程仓库添加为本地仓库的远程源。可以使用 git remote add 命令来添加远程仓库。例如：
+
+bash
+git remote add origin <远程仓库地址>
+这个命令将远程仓库的地址添加为名为 origin 的远程源。
+
+拉取远程分支： 一旦远程仓库添加成功，你可以使用 git fetch 命令来拉取远程分支的更新。例如：
+
+bash
+Copy code
+git fetch origin
+这个命令会拉取远程仓库 origin 中的所有分支的更新。这样，你就可以获取到远程仓库的最新提交信息。
+
+查看远程分支的提交信息： 最后，你可以使用 git log 命令来查看远程分支的提交信息。例如：
+
+bash
+Copy code
+git log -p origin/master
+这个命令将显示远程仓库 origin 上 master 分支的提交历史，并包括每个提交的详细信息。
+
+通过完成以上步骤，你就可以在初始化了一个新的仓库之后，查看远程仓库的提交信息了。请确保你的远程仓库地址正确，并且已经添加到了本地仓库中。
+
+要查看当前设置的远程仓库地址，可以使用以下命令：
+
+bash
+Copy code
+git remote -v
