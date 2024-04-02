@@ -1,6 +1,9 @@
 测试新环境
 pkg-config --modversion eigen3
 
+这个版本在上传到getee的时候没有限制
+
+
 ssh-keygen -t rsa -C "邮箱"
 
 ssh -T git@github.com
